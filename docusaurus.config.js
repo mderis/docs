@@ -8,7 +8,7 @@ module.exports = {
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
   organizationName: 'moslem-deris', // Usually your GitHub org/user name.
-  projectName: 'Apiato', // Usually your repo name.
+  projectName: 'docs', // Usually your repo name.
   themeConfig: {
     navbar: {
       title: 'My Site',
