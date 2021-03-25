@@ -4,7 +4,7 @@ module.exports = {
   tagline: 'Build scalable API\'s faster | With PHP 7.4 and Laravel 8.0',
   url: 'https://moslem-deris.github.io',
   baseUrl: '/docs/',
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
   organizationName: 'moslem-deris', // Usually your GitHub org/user name.
