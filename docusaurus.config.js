@@ -10,12 +10,18 @@ module.exports = {
   organizationName: 'moslem-deris', // Usually your GitHub org/user name.
   projectName: 'docs', // Usually your repo name.
   themeConfig: {
+    hideableSidebar: true,
+    announcementBar: {
+      id: 'v1-new-domain',
+      content:
+        '➡️ We are trying hard to move to version 10.0 of Apiato 🔄',
+    },
     navbar: {
       title: 'My Site',
       logo: {
         alt: 'My Site Logo',
         src: 'img/logo.svg',
-      },
+      },  
       items: [
         {
           to: 'docs/',
@@ -24,6 +30,27 @@ module.exports = {
           position: 'left',
         },
         {to: 'blog', label: 'Blog', position: 'left'},
+        {
+          type: 'docsVersionDropdown',
+          position: 'right',
+          dropdownActiveClassDisabled: true,
+          dropdownItemsAfter: [
+            {
+              to: '/versions',
+              label: 'All versions',
+            },
+          ],
+        },
+        {
+          type: 'localeDropdown',
+          position: 'right',
+          dropdownItemsAfter: [
+            {
+              to: 'https://github.com/moslem-deris/docs/issues',
+              label: 'Help Us Translate',
+            },
+          ],
+        },
         {
           href: 'https://github.com/apiato/apiato',
           label: 'GitHub',
@@ -85,13 +112,15 @@ module.exports = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/',
+            'https://github.com/moslem-deris/docs/edit/main/docs',
+          showLastUpdateAuthor: true,
+          showLastUpdateTime: true,
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/blog/',
+            'https://github.com/moslem-deris/docs/edit/main/blog/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
