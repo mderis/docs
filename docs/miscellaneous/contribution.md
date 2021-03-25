@@ -212,7 +212,7 @@ Make sure you create a PR from your custom branch `feature-awesome` to `master` 
 
 Checkout [How to upgrade apiato]({{ site.baseurl }}{% link _docs/miscellaneous/faq.md %}).
 
-<br>
+<br/>
 
 <a name="Contributing-Documentation"></a>
 # Contributing to the Documentation
@@ -311,9 +311,9 @@ method, which simply returns a `string`.
 # Making a new Release (for admins)
 
 1 - Merge the last [stable branch](https://github.com/apiato/apiato/branches) in the master branch. (To get any new bug fixes.)
-<br>
+<br/>
 2 - Decide on the next version number for the new release. By checking the current [releases](https://github.com/apiato/apiato/releases).
-<br>
+<br/>
 3 - Update the version VERSION value in `app/Ship/core/Foundation/Apiato.php` (example: `const VERSION = '8.1.0';`).
 
 ### Minor Release 
@@ -321,9 +321,9 @@ method, which simply returns a `string`.
 Your PR with that minor changes should be submitted and merged into master.
 
 1 - Go to [releases](https://github.com/apiato/apiato/releases) and create a new one from the master branch.
-<br>
+<br/>
 2 - Make sure you write a complete Changelog, in the release description.
-<br>
+<br/>
 3 - If you updated the documentation and you should! then visit the [documentation](https://github.com/apiato/documentation) repository and merge the PR into master.
 
 ### Major Release 
@@ -332,11 +332,11 @@ Master is the branch that contains all the new changes.
 So we need to create a new branch from master then make a release from that new branch.
 
 1 - From master, checkout a new branch named as the version number you want to release. (Example `8.1`).
-<br>
+<br/>
 2 - Go to [releases](https://github.com/apiato/apiato/releases) and create a new one from the branch created in the step above. (Example `8.1`).
-<br>
+<br/>
 3 - Make sure you write a complete Changelog, in the release description.
-<br>
+<br/>
 4 - Change the [default branch](https://github.com/apiato/apiato/settings/branches) on github to that new branch.
-<br>
+<br/>
 5 - If you updated the documentation and you should! then visit the [documentation](https://github.com/apiato/documentation) repository and merge the PR into master.

@@ -10,10 +10,10 @@ slug: /localization
 - [Get Available Localizations](#get-available-localizations)
 - [Tests](#tests)
 
-<br>
-<br>
+<br/>
+<br/>
 The Localization is provided by the Localization Container.
-<br>
+<br/>
 
 <a name="select-request-language"></a>
 

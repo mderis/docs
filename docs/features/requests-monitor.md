@@ -8,8 +8,8 @@ slug: /requests-monitor
 - [Result](#result)
 - [Change the default log file](#change-the-default-log-file)
 
-<br>
-<br>
+<br/>
+<br/>
 
 Apiato provides a simple and easy way to monitor and log all the HTTP requests coming to your application.
 

@@ -10,8 +10,8 @@ slug: /payments
 - [Developing own Payment Gateway Containers](#payment-gateway-container)
 - [Mocking for Testing](#mocking-the-real-call-for-testing)
 
-<br>
-<br>
+<br/>
+<br/>
 
 Apiato provides a `Payment` container that acts as *gateway* for multiple payment providers (`Stripe`,
 `PayPal`...).

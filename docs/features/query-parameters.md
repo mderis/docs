@@ -20,8 +20,8 @@ slug: /query-parameters
 - [See the Query parameters from the User Developer perspective](#see-the-query-parameters-from-the-user-developer-perspective)
 - [More Information](#more)
 
-<br>
-<br>
+<br/>
+<br/>
 
 Users often need to control the response data, thus the apiato supports some useful and common query parameters:
 

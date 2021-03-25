@@ -8,8 +8,8 @@ slug: /social-authentication
 - [Setup Social Authentication](#Setup-Social-Authentication)
 - [Support new Auth Provide](#support-new-auth-provide)
 
-<br>
-<br>
+<br/>
+<br/>
 
 For Social Authentication Apiato uses [Socialite]( https://github.com/laravel/socialite).
 

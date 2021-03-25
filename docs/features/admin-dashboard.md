@@ -7,8 +7,8 @@ slug: /admin-dashboard
 - [How it works](#how-it-works)
 - [Change default Admin credentials](#change-default-admin-credentials)
 
-<br>
-<br>
+<br/>
+<br/>
 
 
 *Apiato does not recommend serving HTML pages. Instead you should build your own Frontend App completely isolated from the Backend code.*

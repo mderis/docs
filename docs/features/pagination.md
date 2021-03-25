@@ -7,8 +7,8 @@ slug: /pagination
 - [Limit](#limit)
 - [Skip the Pagination Limit](#skip-the-pagination-limit)
 
-<br>
-<br>
+<br/>
+<br/>
 
 For pagination apiato uses the [L5 Repository Package](https://packagist.org/packages/prettus/l5-repository) and the
 pagination gets applied whenever you use the `paginate` function on any model repository

@@ -15,8 +15,8 @@ order: 2
 - [Create live Testing Data](#create-live-testing-data)
 - [Debugging with PsySH](#Debugging-with-PsySH)
 
-<br>
-<br>
+<br/>
+<br/>
 
 Apiato provides additional helper functions, on top of the [Laravel's default Tests](https://laravel.com/docs/master/http-tests),
 to make testing your API much faster and fun.

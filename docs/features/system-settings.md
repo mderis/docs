@@ -6,8 +6,8 @@ slug: /system-settings
 - [Seed the default settings](#seed-the-default-settings)
 - [Read settings](#read-settings)
 
-<br>
-<br>
+<br/>
+<br/>
 
 At many cases you need to have some dynamic system settings, such as in a referral program, where you give 'gifts' to anyone who refers new users. But those gifts can be changed in the future, so it's better not have them statically created in the code, instead read from the database where an  Admin can manage them at any time.
 

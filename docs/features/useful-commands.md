@@ -8,8 +8,8 @@ slug: /useful-commands
 - [List All Tasks Command](#list-all-tasks-command)
 - [List Container Dependencies Command](#list-container-dependencies-command)
 
-<br>
-<br>
+<br/>
+<br/>
 
 Apiato is shipped with many useful commands to help you speed up the development process.
 You can see list of all commands, by typing `php artisan` and look for **Apiato** section.

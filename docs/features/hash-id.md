@@ -11,8 +11,8 @@ slug: /hash-id
     - [for URL ID's](#for-url-ids)
 - [Availability](#availability)
 
-<br>
-<br>
+<br/>
+<br/>
 Hashing your internal ID's, is very helpful feature for security reasons (to prevent some hack attacks) and business reasons (to hide the real total records from your competitors).
 
 <a name="enable-hash-id"></a>

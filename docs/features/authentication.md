@@ -23,8 +23,8 @@ slug: /authentication
 - [Reset Password](#Reset-Password)
 - [Social Authentication](#social-authentication)
 
-<br />
-<br />
+<br/>
+<br/>
 
 Middlewares are the best solution to apply Authentication in your App.
 
@@ -78,7 +78,7 @@ and keep reading this documentation.
 - The Proxy: is just an endpoint, that you should call instead of calling the Auth server endpoints directly, the proxy
 endpoint will append the client credentials to your request and calls the Auth server for you, then return its response back. Each first-client app should have its own proxy endpoints (at least one of Login and one of Token Refresh). By default Apiato provide an `Admin Web Client` endpoints.
 
-<br>
+<br/>
 
 > You can Login to the first party app with proxy or without proxy, while for the third party you only need to login
 > without proxy. (same apply to refreshing token).
@@ -90,7 +90,7 @@ endpoint will append the client credentials to your request and calls the Auth s
 > For third party apps:
 > - Without Proxy << you don't need a proxy for the third party clients as they usually integrate with your API from the backend side which protects the client credentials.
 
-<br>
+<br/>
 
 <a name="first-party-clients"></a>
 ## A: For first-party clients
@@ -147,7 +147,7 @@ Header `Authorization = Bearer {Access-Token}`.
 
 More info at [Laravel Passport Here](https://laravel.com/docs/master/passport#password-grant-tokens)
 
-<br>
+<br/>
 
 > WARNING: the Client ID and Secret should not be stored in JavaScript or browser cache, or made accessible in any way.
 

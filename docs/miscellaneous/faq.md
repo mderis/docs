@@ -18,7 +18,7 @@ order: 1
 * [What is the default Username for authentication?](#q14)
 * [I have a question and I can't find answer!!](#q100)
 
-<br>
+<br/>
 
 <a name="q1"></a>
 ## Do I have to use the Porto Architecture to benefit from Apiato!?
