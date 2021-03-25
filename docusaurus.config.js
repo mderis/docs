@@ -112,7 +112,7 @@ module.exports = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           editUrl:
-            'https://github.com/moslem-deris/docs/edit/main/docs',
+            'https://github.com/moslem-deris/docs/edit/main',
           showLastUpdateAuthor: true,
           showLastUpdateTime: true,
         },
@@ -120,7 +120,7 @@ module.exports = {
           showReadingTime: true,
           // Please change this to your repo.
           editUrl:
-            'https://github.com/moslem-deris/docs/edit/main/blog/',
+            'https://github.com/moslem-deris/docs/edit/main',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
