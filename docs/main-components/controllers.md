@@ -1,7 +1,5 @@
 ---
-title: "Controllers"
-category: "Main Components"
-order: 2
+title: Controllers
 ---
 
 - [Definition & Principles](#definition-principles)

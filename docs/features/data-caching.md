@@ -1,6 +1,5 @@
 ---
 title: Data Caching
-slug: /data-caching
 ---
 
 - [Enable / Disable Eloquent Query Caching](#enable-disable-eloquent-query-caching)

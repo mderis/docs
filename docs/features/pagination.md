@@ -1,6 +1,5 @@
 ---
 title: Pagination
-slug: /pagination
 ---
 
 - [Change the the default pagination limit](#change-the-the-default-pagination-limit)

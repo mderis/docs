@@ -1,6 +1,5 @@
 ---
 title: User Registration
-slug: /user-registration
 ---
 
 - [Register users by credentials (email and passwords)](#register-users-by-credentials-email-and-passwords)

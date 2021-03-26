@@ -1,6 +1,5 @@
 ---
 title: Default Endpoints
-slug: /default-endpoints
 ---
 
 Apiato comes shipped with many **useful** API endpoints for speeding up the development process.

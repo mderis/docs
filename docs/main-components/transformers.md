@@ -1,7 +1,5 @@
 ---
-title: "Transformers"
-category: "Main Components"
-order: 12
+title: Transformers
 ---
 
 * [Definition & Principles](#definition-principles)

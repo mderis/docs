@@ -1,6 +1,5 @@
 ---
 title: Rate Limiting
-slug: /rate-limiting
 ---
 
 **apiato** uses the default Laravel middleware for rate limiting (throttling).

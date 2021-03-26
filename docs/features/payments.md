@@ -1,6 +1,5 @@
 ---
 title: Payments
-slug: /payments
 ---
 
 - [Supported Payment Gateway](#available-payment-gateways)

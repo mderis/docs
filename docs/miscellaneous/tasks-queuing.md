@@ -1,6 +1,5 @@
 ---
 title: Tasks Queuing
-slug: /tasks-queuing
 ---
 
 - [Tasks Queuing](#Tasks-Queuing)

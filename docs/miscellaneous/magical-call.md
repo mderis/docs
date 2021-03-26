@@ -1,6 +1,5 @@
 ---
 title: Magical Call
-slug: /magical-call
 ---
 
 - [The Magical Call](#the-magical-call)

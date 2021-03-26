@@ -1,6 +1,5 @@
 ---
 title: Search Query Parameter
-slug: /search-query-parameter
 ---
 
 Below we'll see how to setup a Search Query Parameter, on a Model:

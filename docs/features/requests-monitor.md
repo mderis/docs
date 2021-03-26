@@ -1,6 +1,5 @@
 ---
 title: Requests Monitor
-slug: /requests-monitor
 ---
 
 - [Enable requests logging](#enable-requests-logging)

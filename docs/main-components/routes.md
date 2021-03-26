@@ -1,7 +1,5 @@
 ---
-title: "Routes"
-category: "Main Components"
-order: 1
+title: Routes
 ---
 
 * [Definition & Principles](#definition-principles)

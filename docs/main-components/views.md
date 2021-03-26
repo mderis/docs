@@ -1,7 +1,5 @@
 ---
-title: "Views"
-category: "Main Components"
-order: 11
+title: Views
 ---
 
 * [Definition & Principles](#definition-principles)

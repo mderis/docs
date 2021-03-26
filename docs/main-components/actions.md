@@ -1,6 +1,5 @@
 ---
 title: Actions
-slug: /actions
 ---
 - [Definition & Principles](#definition-principles)
 - [Rules](#rules)

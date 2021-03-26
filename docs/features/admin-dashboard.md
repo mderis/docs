@@ -1,6 +1,5 @@
 ---
 title: Admin Dashboard
-slug: /admin-dashboard
 ---
 
 - [The provided Admin route](#the-provided-admin-route)

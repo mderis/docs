@@ -1,7 +1,5 @@
 ---
-title: "Models"
-category: "Main Components"
-order: 10
+title: Models
 ---
 
 - [Definition & Principles](#definition-principles)

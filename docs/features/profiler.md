@@ -1,6 +1,5 @@
 ---
 title: Profiler
-slug: /profiler
 ---
 
 Profiling is very important to optimize the performance of your application. And help you better understand what happens when a request is received, as well as it can speed up the debugging process.

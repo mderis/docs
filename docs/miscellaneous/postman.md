@@ -1,6 +1,5 @@
 ---
 title: Postman Environment
-slug: /postman-environment
 ---
 
 - [Apiato Postman API & Environment](#title)

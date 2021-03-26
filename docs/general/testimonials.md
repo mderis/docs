@@ -1,6 +1,5 @@
 ---
 title: Testimonials
-slug: /testimonials
 ---
 
 <a name="Testimonials"></a>

@@ -1,6 +1,5 @@
 ---
 title: API Docs Generator
-slug: /api-docs-generator
 ---
 
 - [Requirements](#requirements)

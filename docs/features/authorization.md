@@ -1,6 +1,5 @@
 ---
 title: Authorization
-slug: /authorization
 ---
 
 - [How it works](#how-it-works)

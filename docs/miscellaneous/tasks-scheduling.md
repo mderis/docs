@@ -1,6 +1,5 @@
 ---
 title: Tasks Scheduling
-slug: /tasks-scheduling
 ---
 
 - [Tasks Scheduling](#Tasks-Scheduling)

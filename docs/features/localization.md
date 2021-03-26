@@ -1,6 +1,5 @@
 ---
 title: Localization
-slug: /localization
 ---
 
 - [Select Request Language](#select-request-language)

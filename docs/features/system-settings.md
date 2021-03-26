@@ -1,6 +1,5 @@
 ---
 title: System Settings
-slug: /system-settings
 ---
 
 - [Seed the default settings](#seed-the-default-settings)

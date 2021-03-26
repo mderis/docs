@@ -1,6 +1,5 @@
 ---
 title: ETag
-slug: /etag
 ---
 
 ## ETag Middleware

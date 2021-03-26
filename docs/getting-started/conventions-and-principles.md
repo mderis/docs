@@ -1,6 +1,5 @@
 ---
 title: Conventions and Principles
-slug: /conventions-and-principles
 ---
 
 * [HTTP Methods usage in RESTful API's](#HTTP-Methods)

@@ -1,6 +1,5 @@
 ---
 title: Authentication
-slug: /authentication
 ---
 
 - [API Authentication (OAuth 2.0)](#api-authentication-oauth-20)

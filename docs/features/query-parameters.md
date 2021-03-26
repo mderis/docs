@@ -1,6 +1,5 @@
 ---
 title: Query Parameters
-slug: /query-parameters
 ---
 
 - [Sorting & Ordering](#sorting-ordering)

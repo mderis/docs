@@ -1,6 +1,5 @@
 ---
 title: Validation
-slug: /validation
 ---
 
 

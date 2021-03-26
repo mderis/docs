@@ -1,6 +1,5 @@
 ---
 title: Social Authentication
-slug: /social-authentication
 ---
 
 - [Default Supported Auth Provide](#default-supported-auth-provide)

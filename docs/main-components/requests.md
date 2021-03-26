@@ -1,7 +1,5 @@
 ---
-title: "Requests"
-category: "Main Components"
-order: 3
+title: Requests
 ---
 * [Definition & Principles](#definition-principles)
 * [Rules](#rules)

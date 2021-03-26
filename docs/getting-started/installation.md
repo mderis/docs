@@ -1,6 +1,5 @@
 ---
 title: Installation
-slug: /installation
 ---
 
 * [A) Apiato Installation](#App)

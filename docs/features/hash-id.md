@@ -1,6 +1,5 @@
 ---
 title: Hash ID
-slug: /hash-id
 ---
 
 - [Enable Hash ID](#enable-hash-id)

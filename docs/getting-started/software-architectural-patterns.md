@@ -1,6 +1,5 @@
 ---
 title: Software Architectural Patterns
-slug: /software-architectural-patterns
 ---
 
 - [Introduction](#intro)

@@ -1,6 +1,5 @@
 ---
 title: Code Generator
-slug: /code-generator
 ---
 
 - [Introduction](#introduction)

@@ -1,6 +1,5 @@
 ---
 title: API Versioning
-slug: /api-versioning
 ---
 
 - [How it works](#How-it-works)

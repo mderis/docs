@@ -1,6 +1,5 @@
 ---
 title: Tests Helpers
-slug: /tests-helpers
 ---
 
 - [Tests properties](#tests-properties)

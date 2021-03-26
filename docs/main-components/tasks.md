@@ -1,7 +1,5 @@
 ---
-title: "Tasks"
-category: "Main Components"
-order: 5
+title: Tasks
 ---
 
 - [Definition & Principles](#definition-principles)

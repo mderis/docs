@@ -1,6 +1,5 @@
 ---
 title: Overview
-slug: /overview
 ---
 
 * [Quick Overview](#Quick-Overview)

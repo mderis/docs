@@ -1,6 +1,5 @@
 ---
 title: Requests
-slug: /requests
 ---
 
 * [Form content types](#form-content-types)

@@ -1,6 +1,5 @@
 ---
 title: Useful Commands
-slug: /useful-commands
 ---
 
 - [Available Commands](#available-commands)

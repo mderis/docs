@@ -1,6 +1,5 @@
 ---
 title: Containers Installer
-slug: /containers-installer
 ---
 
 - [Containers](#containers)

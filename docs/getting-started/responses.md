@@ -1,6 +1,5 @@
 ---
 title: Responses
-slug: /responses
 ---
 
 * [Apiato Response](#Res-payload)

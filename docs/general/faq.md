@@ -1,6 +1,5 @@
 ---
 title: Frequently Asked Questions
-slug: /faq
 ---
 
 * [Do I have to use the Porto Architecture to benefit from Apiato](#q1)

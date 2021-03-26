@@ -1,7 +1,5 @@
 ---
-title: "Transporters"
-category: "Main Components"
-order: 3
+title: Transporters
 ---
 
 - [Definition & Principles](#definition-principles)

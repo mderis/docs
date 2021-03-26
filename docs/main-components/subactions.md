@@ -1,7 +1,5 @@
 ---
-title: "Sub Actions"
-category: "Main Components"
-order: 16
+title: Sub Actions
 ---
 
 - [Definition & Principles](#definition-principles)
