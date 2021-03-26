@@ -1,7 +1,6 @@
 ---
-title: "Tasks Queuing"
-category: "Miscellaneous"
-order: 4
+title: Tasks Queuing
+slug: /tasks-queuing
 ---
 
 - [Tasks Queuing](#Tasks-Queuing)

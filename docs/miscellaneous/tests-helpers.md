@@ -1,7 +1,6 @@
 ---
-title: "Tests Helpers"
-category: "Miscellaneous"
-order: 2
+title: Tests Helpers
+slug: /tests-helpers
 ---
 
 - [Tests properties](#tests-properties)

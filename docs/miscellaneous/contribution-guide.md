@@ -1,7 +1,6 @@
 ---
-title: "Contribution Guide"
-category: "General"
-order: 2
+title: Contribution Guide
+slug: /contribution-guide
 ---
 
 > Thank you for your consideration to contribute. This project is powered and driven by its users, and contributions

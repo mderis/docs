@@ -1,7 +1,6 @@
 ---
-title: "Actions"
-category: "Main Components"
-order: 4
+title: Actions
+slug: /actions
 ---
 - [Definition & Principles](#definition-principles)
 - [Rules](#rules)

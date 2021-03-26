@@ -1,7 +1,6 @@
 ---
-title: "Magical Call"
-category: "Miscellaneous"
-order: 1
+title: Magical Call
+slug: /magical-call
 ---
 
 - [The Magical Call](#the-magical-call)

@@ -42,6 +42,76 @@ module.exports = {
         'features/profiler'
       ],
     },
-
+    {
+      type: 'category',
+      label: 'Main Components',
+      items: [
+        'components/routes',
+        'components/controllers',
+        'components/requests',
+        'components/transporters',
+        'components/actions',
+        'components/tasks',
+        'components/models',
+        'components/views',
+        'components/transformers',
+        'components/subactions'
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Optional Components',
+      items: [
+        'components/providers',
+        'components/repositories',
+        'components/exceptions',
+        'components/criterias',
+        'components/tests',
+        'components/migrations',
+        'components/seeders',
+        'components/factories',
+        'components/middlewares',
+        'components/configs',
+        'components/commands',
+        'components/jobs',
+        'components/languages',
+        'components/events',
+        'components/mails',
+        'components/notifications',
+        'components/values'
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Miscellaneous',
+      items: [
+        'miscellaneous/magical-call',
+        'miscellaneous/tests-helpers',
+        'miscellaneous/tasks-scheduling',
+        'miscellaneous/tasks-queuing',
+        'miscellaneous/container-installer',
+        'miscellaneous/postman'
+      ],
+    },
+    {
+      type: 'category',
+      label: 'General',
+      items: [
+        'miscellaneous/faq',
+        'miscellaneous/contribution-guide',
+        'miscellaneous/upgrade-guide',
+        'miscellaneous/testimonials'
+      ],
+    },
+    {
+      type: 'link',
+      label: '3rd Party Containers',
+      href: 'https://github.com/apiato/awesome-apiato'
+    },
+    {
+      type: 'link',
+      label: 'Change Log',
+      href: 'https://github.com/apiato/apiato/releases'
+    },
   ],
 };

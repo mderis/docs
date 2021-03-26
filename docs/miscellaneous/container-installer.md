@@ -1,7 +1,6 @@
 ---
-title: "Containers Installer"
-category: "Miscellaneous"
-order: 5
+title: Containers Installer
+slug: /containers-installer
 ---
 
 - [Containers](#containers)

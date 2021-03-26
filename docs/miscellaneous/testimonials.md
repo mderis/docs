@@ -1,7 +1,6 @@
 ---
-title: "Testimonials"
-category: "General"
-order: 90
+title: Testimonials
+slug: /testimonials
 ---
 
 <a name="Testimonials"></a>

@@ -1,7 +1,6 @@
 ---
-title: "Upgrade Guide"
-category: "General"
-order: 3
+title: Upgrade Guide
+slug: /upgrade-guide
 ---
 
 - [Upgrade from 8.0 to 9.0](#upgrade-apiato-from-version80To90)

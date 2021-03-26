@@ -1,7 +1,6 @@
 ---
-title: "Postman Environment"
-category: "Miscellaneous"
-order: 6
+title: Postman Environment
+slug: /postman-environment
 ---
 
 - [Apiato Postman API & Environment](#title)

@@ -1,7 +1,6 @@
 ---
-title: "Frequently Asked Questions"
-category: "General"
-order: 1
+title: Frequently Asked Questions
+slug: /faq
 ---
 
 * [Do I have to use the Porto Architecture to benefit from Apiato](#q1)

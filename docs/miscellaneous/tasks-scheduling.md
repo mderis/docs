@@ -1,7 +1,6 @@
 ---
-title: "Tasks Scheduling"
-category: "Miscellaneous"
-order: 3
+title: Tasks Scheduling
+slug: /tasks-scheduling
 ---
 
 - [Tasks Scheduling](#Tasks-Scheduling)
