@@ -17,9 +17,9 @@ module.exports = {
         '➡️ We are trying hard to move to version 10.0 of Apiato 🔄',
     },
     navbar: {
-      title: 'My Site',
+      title: 'Apiato',
       logo: {
-        alt: 'My Site Logo',
+        alt: 'Apiato Logo',
         src: 'img/logo.svg',
       },  
       items: [
@@ -75,15 +75,15 @@ module.exports = {
           items: [
             {
               label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+              href: 'https://stackoverflow.com/questions/tagged/apiato',
             },
             {
               label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
+              href: 'https://discordapp.com/invite/apiato',
             },
             {
               label: 'Twitter',
-              href: 'https://twitter.com/docusaurus',
+              href: 'https://twitter.com/apiato',
             },
           ],
         },
@@ -96,12 +96,12 @@ module.exports = {
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              href: 'https://github.com/apiato/apiato',
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Apiato. Built with Love.`,
     },
   },
   presets: [
