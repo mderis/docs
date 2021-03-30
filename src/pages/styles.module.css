@@ -4,6 +4,12 @@
  * CSS files with the .module.css suffix will be treated as CSS modules
  * and scoped locally.
  */
+ @font-face { font-family: Hind Siliguri; src: url('../fonts/HindSiliguri-Regular.ttf'); } 
+ @font-face { font-family: Martel; src: url('../fonts/Martel-Regular.ttf'); } 
+
+*{
+  font-family: Hind Siliguri;
+}
 
 .heroBanner {
   padding: 4rem 0;
@@ -31,7 +37,31 @@
   width: 100%;
 }
 
-.featureImage {
-  height: 200px;
-  width: 200px;
+.featureIcon{
+  margin: 1rem;
+  text-align: center;
+}
+
+.featureDescription {
+  font-size: 1em;
+  color: grey;
+  text-align: center;
+}
+
+.title {
+  padding: 4rem 0 0 0;
+  font-family: Martel;
+  color: #5869c8;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.description {
+  padding: 1rem 16rem;
+  font-size: 1.3em;
+  color: grey;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
 }
