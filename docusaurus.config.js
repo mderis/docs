@@ -9,6 +9,9 @@ module.exports = {
   favicon: 'img/favicon.ico',
   organizationName: 'moslem-deris', // Usually your GitHub org/user name.
   projectName: 'docs', // Usually your repo name.
+  stylesheets: [
+    "https://fonts.googleapis.com/icon?family=Material+Icons",
+  ],
   themeConfig: {
     hideableSidebar: true,
     announcementBar: {
@@ -20,7 +23,7 @@ module.exports = {
       title: 'Apiato',
       logo: {
         alt: 'Apiato Logo',
-        src: 'img/logo.svg',
+        src: 'img/logo.png',
       },  
       items: [
         {
@@ -78,12 +81,8 @@ module.exports = {
               href: 'https://stackoverflow.com/questions/tagged/apiato',
             },
             {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/apiato',
-            },
-            {
-              label: 'Twitter',
-              href: 'https://twitter.com/apiato',
+              label: 'Slack',
+              href: 'https://apiato.slack.com/join/shared_invite/zt-mtriung2-1__8zBAaJO_xXa_kMFsHgQ',
             },
           ],
         },
@@ -101,7 +100,7 @@ module.exports = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Apiato. Built with Love.`,
+      copyright: `Copyright © 2016 - ${new Date().getFullYear()} Apiato. Built with Love.`,
     },
   },
   presets: [
