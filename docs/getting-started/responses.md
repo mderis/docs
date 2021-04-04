@@ -2,15 +2,14 @@
 title: Responses
 ---
 
-* [Apiato Response](#Res-payload)
-* [Default Apiato Responses Payload](#Def-Res-payload)
-* [Change the default Response payload](#change-apiao-res-payload)
-* [Resource Keys](#Resource-Keys)
-* [Error Responses formats](#Error-Res-Format)
-* [Building a Responses from the Controller](#build-res-from-con)
+* [Apiato Response](#response)
+* [Default Apiato Responses Payload](#default-response-payload)
+* [Change the default Response payload](#change-default-response-payload)
+* [Resource Keys](#resource-keys)
+* [Error Responses formats](#error-response-formats)
+* [Building a Responses from the Controller](#building-response-from-controller)
 
-<a name="Res-payload"></a>
-### Apiato Response
+### Apiato Response {#response}
 
 In Apiato you can define your own response payload or use one of the supported serializers.
 
@@ -19,8 +18,7 @@ by [Fractal](http://fractal.thephpleague.com/transformers/).
 
 By default Apiato uses `DataArraySerializer`. Below is an example of the response payload.
 
-<a name="Def-Res-payload"></a>
-### Default Apiato Responses Payload:
+### Default Apiato Responses Payload: {#default-response-payload}
 
 `DataArraySerializer` pesponse payload look like this:
 
@@ -100,8 +98,7 @@ Informs the User about what relationships can be include in the response. Exampl
 
 For more details read the `Relationships` section in the [Query Parameters]({{ site.baseurl }}{% link _docs/features/query-parameters.md %}) page.
 
-<a name="change-apiao-res-payload"></a>
-### Change the default Response payload:
+### Change the default Response payload: {#change-default-response-payload}
 
 The default response format (specification) is the `DataArray` Fractal Serializer (`League\Fractal\Serializer\DataArraySerializer`).
 
@@ -125,10 +122,9 @@ In case of returning JSON Data (`JsonApiSerializer`), you may wish to check some
 * [JSON API](http://jsonapi.org/format/) (very popular and well documented)
 * [HAL](http://stateless.co/hal_specification.html) (useful in case of hypermedia)
 
-<a name="Resource-Keys"></a>
-### Resource Keys
+### Resource Keys {#resource-keys}
 
-#### For JsonApiSerializer.
+#### For JsonApiSerializer. {#resource-keys-for-json-api-serializer}
 
 The transformer allows appending a `ResourceKey` to the transformed resource. You can set the `ResourceKey` in your
 response payload in 2 ways:
@@ -139,18 +135,16 @@ response payload in 2 ways:
 If no `$resourceKey` is defined at the `Model`, the `ShortClassName` is used as key. For example, the `ShortClassName` of
 the `App\Containers\User\Models\User::class` is `User`.
 
-#### For DataArraySerializer.
+#### For DataArraySerializer. {#resource-keys-for-data-array-serializer}
 
 By default the `object` keyword is used as a resource key for each response, and it's set manually in each transformer,
 *to be automated later*.
 
-<a name="Error-Res-Format"></a>
-### Error Responses formats
+### Error Responses formats {#error-response-formats}
 
 Visit each feature, example the Authentication and there you will see how an unauthenticated response looks like, same
 for Authorization, Validation and so on.
 
-<a name="build-res-from-con"></a>
-## Building a Responses from the Controller:
+## Building a Responses from the Controller: {#building-response-from-controller}
 
 Checkout the [Controller response builder helper functions]({{ site.baseurl }}{% link _docs/components/controllers.md %}).

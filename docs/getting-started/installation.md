@@ -11,22 +11,19 @@ title: Installation
 	* [4) Documentation Setup](#Documentation)
 	* [5) Testing Setup](#Testing)
 * [B) Environment Setup](#Development-Environment)
-	* [Option 1: Using Docker and Laradock](#Dev-Env-Opt-A)
-	* [Option 2: Using Vagrant and Homestead](#Dev-Env-Opt-B)
-	* [Option 3: Using MAMP/WAMP or something else](#Dev-Env-Opt-C)
+	* [Option 1: Using Docker and Laradock](#Using-Docker-With-Laradock)
+	* [Option 2: Using Vagrant and Homestead](#Using-Vagrant-Using-Homestead)
+	* [Option 3: Using MAMP/WAMP or something else](#Using-anything-else)
 * [C) Play](#Play)
 
 
-<a name="App"></a>
-## A) Apiato Application Installation
+## A) Apiato Application Installation {#App}
 
 **Apiato** can be installed automatically with Composer (recommended) or manually (with Git or direct download):
 
-<a name="Code-Setup"></a>
-### 1) Code Setup
+### 1) Code Setup {#Code-setup}
 
-<a name="App-Composer"></a>
-#### 1.A) Automatically via Composer
+#### 1.A) Automatically via Composer {#App-Composer}
 
 1) Clone the repo, install dependencies and setup the project:
 
@@ -48,8 +45,7 @@ composer create-project apiato/apiato my-api dev-master
 
 3) Continue from [2) Database Setup](#Setup-Database) below.
 
-<a name="App-Git"></a>
-#### 1.B) Manually
+#### 1.B) Manually {#App-Git}
 
 You can download the Code directly from the repository as `.ZIP` file or clone the repository using `Git` (recommended):
 
@@ -87,8 +83,7 @@ php artisan key:generate
 
 5) delete the `.git` folder from the root directory and initialize your own with `git init`.
 
-<a name="Setup-Database"></a>
-### 2) Database Setup
+### 2) Database Setup {#Setup-Detabase}
 
 1) Migrate the Database:
 
@@ -113,8 +108,7 @@ To give the `admin` role, access to all the seeded permissions in the system, ru
 php artisan apiato:permissions:toRole admin
 ```
 
-<a name="Prepare-OAuth"></a>
-### 3) OAuth 2.0 Setup
+### 3) OAuth 2.0 Setup {#Prepare-OAuth}
 
 1) Create encryption keys to generate secure access tokens and create "personal access" and "password grant" clients
 which will be used to generate access tokens:
@@ -123,8 +117,7 @@ which will be used to generate access tokens:
 php artisan passport:install
 ```
 
-<a name="Documentation"></a>
-### 4) Documentation Setup
+### 4) Documentation Setup {#Documentation}
 
 If you are planning to use ApiDoc JS then proceed with this setup, else skip this and use whatever you prefer:
 
@@ -148,8 +141,7 @@ Alternatively you can generate a swagger doc from the apidoc comments, to do so 
 
 ##### Visit [API Docs Generator]({{ site.baseurl }}{% link _docs/features/api-docs-generator.md %}) for more details.
 
-<a name="Testing"></a>
-### 5) Testing Setup
+### 5) Testing Setup {#Testing}
 
 1) Open `phpunit.xml` and make sure the environments are correct for your domain.
 
@@ -159,8 +151,7 @@ Alternatively you can generate a swagger doc from the apidoc comments, to do so 
 vendor/bin/phpunit
 ```
 
-<a name="Development-Environment"></a>
-## B) Development Environment Setup
+## B) Development Environment Setup {#Development-Environment}
 
 You can run **Apiato** on your favorite environment. Below you'll see how you can run it on top of
 [Vagrant](https://www.vagrantup.com/) (using [Laravel Homestead](https://laravel.com/docs/master/homestead)) or
@@ -174,8 +165,7 @@ We'll see how to use both tools and you can pick one, or you can use other optio
 > to use `.dev` domains any more in your local development setup! Our docs has been changed to use `.test`
 > instead of `.dev`, however, you may change it to `.example`, or `.localhost` or whatever suits your needs. [Read more](http://www.faqs.org/rfcs/rfc2606.html).
 
-<a name="Dev-Env-Opt-A"></a>
-### A.1) Using Docker (with Laradock)
+### A.1) Using Docker (with Laradock) {#Using-Docker-With-Laradock}
 
 **Laradock** is a Docker PHP development environment. It facilitate running PHP Apps on Docker.
 
@@ -220,8 +210,7 @@ If you're using NGINX or Apache, make sure the **server_name** (in case of NGINX
 in your the server config file, is set to the following `apiato.test api.apiato.test admin.apiato.test`.
 *(Also don't forget to point the **Root** or **DocumentRoot** to the public directory inside apiato `apiato/public`)*.
 
-<a name="Dev-Env-Opt-B"></a>
-### A.2) Using Vagrant (with Laravel Homestead)
+### A.2) Using Vagrant (with Laravel Homestead) {#Using-Vagrant-Using-Homestead}
 
 1) Configure Homestead:
 
@@ -289,14 +278,12 @@ homestead up --provision
 *If you see `No input file specified` on the sub-domains!
 try running this command `homestead halt && homestead up --provision`.*
 
-<a name="Dev-Env-Opt-C"></a>
-### A.3) Using something else
+### A.3) Using anything else {#Using-anything-else}
 
 If you're not into virtualization solutions, you can setup your environment directly on your machine. Check the
 [software's requirements list]({{ site.baseurl }}{% link _docs/getting-started/requirements.md %}).
 
-<a name="Play"></a>
-## C) Let's Play
+## C) Let's Play {#Play}
 
 Now let's see it in action
 

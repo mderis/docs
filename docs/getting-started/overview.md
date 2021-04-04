@@ -2,23 +2,18 @@
 title: Overview
 ---
 
-* [Quick Overview](#Quick-Overview)
-  * [The basic flow](#basic-flow)
-  * [Sample Route Endpoint](#sample-route)
-  * [Controller Function](#control-fun)
+* [The basic flow](#basic-flow)
+  * [Sample Route Endpoint](#sample-route-endpoint)
+  * [Controller Function](#controller-function)
   * [Sample Action](#sample-action)
-  * [Sample User Response](#user-res)
+  * [Sample User Response](#sample-user-response)
 
-<a name="Quick-Overview"></a>
-## Quick Overview
 
-<a name="basic-flow"></a>
-### The basic flow
+## The basic flow {#basic-flow}
 
 When an HTTP request is received, it first hits your predefined Endpoint (each endpoint live in its own Route file).
 
-<a name="sample-route"></a>
-#### Sample Route Endpoint
+### Sample Route Endpoint {#sample-route-endpoint}
 
 ```php
 <?php
@@ -30,8 +25,7 @@ $router->get('hello', [
 After the user makes a request to the endpoint `[GET] www.api.apiato.com/v1/hello` it calls the defined controller 
 function (`sayHello`).
 
-<a name="control-fun"></a>
-#### Sample Controller Function
+### Sample Controller Function {#controller-function}
 
 ```php
 <?php
@@ -53,8 +47,7 @@ endpoint. _Only if the user has access, it proceed to the function body._
 
 Then the function calls an Action (`SayHelloAction`) to perform the business logic.
 
-<a name="sample-action"></a>
-#### Sample Action
+### Sample Action {#sample-action}
 
 ```php
 <?php
@@ -73,8 +66,7 @@ When the Action finishes its job, the controller function gets ready to build a 
 
 Json responses can be built using the helper function `json` (`$this->json(['foo' => 'bar']);`).
 
-<a name="user-res"></a>
-#### Sample User Response
+### Sample User Response {#sample-user-response}
 
 ```json
 [

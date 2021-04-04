@@ -2,19 +2,19 @@
 title: Software Architectural Patterns
 ---
 
-- [Introduction](#intro)
-- [Porto](#porto-intro)
-  * [Introduction](#introduction-1)
-  * [The Containers Layer](#container-layer)
-    + [Remove a Container (default Containers)](#rm-container)
-    + [Create new Container](#new-Containter)
-      * [Option 1) Using the Code Generator](#use-Generator)
-      * [Option 2) Manually](#manual-new-container)
-    + [Container Conventions](#Containter-Conventions)
+- [Introduction](#introduction)
+- [Porto](#porto)
+  * [Introduction](#porto-introduction)
+  * [The Containers Layer](#porto-container-layer)
+    + [Remove a Container (default Containers)](#porto-remove-container)
+    + [Create new Container](#porto-new-containter)
+      * [Option 1) Using the Code Generator](#porto-new-container-code-generator)
+      * [Option 2) Manually](#porto-new-container-manually)
+    + [Container Conventions](#containter-conventions)
   * [The Ship Layer](#ship-layer)
-- [MVC](#mvc-intro)
+- [MVC](#mvc)
   * [MVC Introduction](#mvc-introduction)
-    + [Difference between Standard MVC and Apiato's MVC](#Difference-mvc)
+    + [Differences between Standard MVC and Apiato's MVC](#mvc-differences)
     + [Setup my Apiato MVC App](#Setup-mvc)
       - [1) First get a fresh version of Apiato](#1--first-get-a-fresh-version-of-apiato)
       - [2) Create the Application](#2--create-the--application-)
@@ -29,13 +29,12 @@ title: Software Architectural Patterns
       - [More Classes](#more-classes)
     + [How to use Apiato features](#Apiato-features)
 
-<a name="intro"></a>
-### Introduction
+### Introduction {#introduction}
 
 The two most common architectures, used for building projects on top of Apiato are:
 
-- **Porto** (Route Request Controller Action Task Model Transformer).
-- **MVC** (Model View Controller). *The Apiato MVC version is a little different than the standard MVC.*
+- [**Porto**](#porto) (Route Request Controller Action Task Model Transformer).
+- [**MVC**](#mvc) (Model View Controller). *The Apiato MVC version is a little different than the standard MVC.*
 
 Porto is the Apiato recommended architecture for building scalable API's with Apiato.
 However, it also support building API's using the popular MVC architecture (with a little modifications).
@@ -44,10 +43,9 @@ However, it also support building API's using the popular MVC architecture (with
 
 Below you will see how you can both any of the architectures to build your project.
 
-## Porto
+## Porto {#porto}
 
-<a name="porto-intro"></a>
-### Introduction
+### Introduction {#porto-introduction}
 
 Porto is an architecture that consists of 2 layers the **Containers** layer and the **Ship** layer.
 
@@ -61,13 +59,11 @@ provided in Apiato live in Containers).
 Spending 15 minutes, reading the [Porto Document](https://github.com/Mahmoudz/Porto) before getting started, is a great
 investment of time.
 
-<a name="container-layer"></a>
-### The Containers Layer
+### The Containers Layer {#porto-container-layer}
 
 Read about the Containers layer [here](https://github.com/Mahmoudz/Porto#Containers-Layer)
 
-<a name="rm-container"></a>
-#### Remove a Container (default Containers)
+#### Remove a Container (default Containers) {#porto-remove-container}
 
 Apiato comes with some default containers. All the containers are optional, and some of them contain essential features.
 
@@ -76,18 +72,15 @@ can simply delete the `documentation` container.
 
 To remove a Container, simply delete the folder then run `composer update` to remove its dependencies.
 
-<a name="new-Containter"></a>
-#### Create new Container
+#### Create new Container {#porto-new-container}
 
-<a name="use-Generator"></a>
-**Option 1) Using the Code Generator:**
+##### Option 1) Using the Code Generator: {#porto-new-container-code-generator}
 
 `php artisan apiato:container`
 
-Refer to the [code generator](http://apiato.io/features/code-generator/) page for more details.
+Refer to the [code generator](../features/code-generator) page for more details.
 
-<a name="manual-new-container"></a>
-**Option 2) manually:**
+##### Option 2) manually: {#porto-new-container-manually}
 
 1. Create a folder in the Containers folder.
 2. Start creating components and adding them in it.
@@ -97,8 +90,7 @@ Refer to the [code generator](http://apiato.io/features/code-generator/) page fo
 For the auto-loading to work flawlessly you MUST adhere to the component's naming conventions and directories. So you
 need to refer to the `documentation page` of the component when creating it.
 
-<a name="Containter-Conventions"></a>
-#### Container Conventions
+#### Container Conventions {#containter-conventions}
 
 - Containers names SHOULD start with Capital. Use CamelCase to rename Containers.
 - Namespace should be the same as the container name, (if container name is "Printer" the namespace should be
@@ -107,15 +99,13 @@ need to refer to the `documentation page` of the component when creating it.
 *Example: If the User Story is (User can create a Stores and Stores can have Items) then we you could have 3
 Containers (User, Store and Item).*
 
-<a name="ship-layer"></a>
-### The Ship Layer
+### The Ship Layer {#ship-layer}
 
 Read about the Ship layer **[here](https://github.com/Mahmoudz/Porto#Port-Layer)**
 
-## MVC
+## MVC {#mvc}
 
-<a name="mvc-intro"></a>
-### MVC Introduction
+### MVC Introduction {#mvc-introduction}
 
 Due to the popularity of MVC, and the fact that many developers don't have enough time to learn about new architectures.
 Apiato, supports the MVC architecture. That is 97% compatible with the laravel MVC.
@@ -123,8 +113,7 @@ Apiato, supports the MVC architecture. That is 97% compatible with the laravel M
 Below you will learn how you can build your API on top of Apiato, using your previous knowledge of the Laravel MVC
 framework.
 
-<a name="Difference-mvc"></a>
-#### Difference between Standard MVC and Apiato's MVC
+#### Differences between Standard MVC and Apiato's MVC {#mvc-differences}
 
 The Porto architecture, does not replace the MVC architecture, instead it extends it for good. So Models, Views, Routes
 and Controllers all still exist, but in different places with a strict set of responsibilities for each component

@@ -3,7 +3,7 @@ title: Requirements
 slug: /
 ---
 
-### Software's
+### Requirements
 
 * [GIT](https://git-scm.com/downloads)
 * [PHP](php.net) >= 7.2 *(7.4 is recommended)*

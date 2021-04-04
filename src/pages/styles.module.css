@@ -8,7 +8,7 @@
  @font-face { font-family: Martel; src: url('../fonts/Martel-Regular.ttf'); } 
 
 *{
-  font-family: Hind Siliguri;
+  /* font-family: Hind Siliguri; */
 }
 
 .heroBanner {

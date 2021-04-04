@@ -3,23 +3,22 @@ title: Requests
 ---
 
 * [Form content types](#form-content-types)
-* [HTTP Request Headers](#send-http-req)
-* [Calling Endpoints](#call-EP)
-  * [Calling unprotected endpoint example](#call-unprotected-EP)
-  * [Calling protected endpoint (passing Bearer Token) example](#call-protected-EP)
+* [HTTP Request Headers](#http-request-headers)
+* [Calling Endpoints](#calling-endpoints)
+  * [Calling unprotected endpoint example](#calling-unprotected-endpoint)
+  * [Calling protected endpoint (passing Bearer Token) example](#calling-protected-endpoint)
 
-<a name="form-content-types"></a>
-## Form content types (W3C)
+## Form content types (W3C) {#form-content-types}
 
 By default Apiato is configured to encode simple text/ASCII data `x-www-form-urlencoded`. However, it does support
 other types as well.
 
-#### ASCII payload
+### ASCII payload {#ascii-payload}
 
 To tell the web server that you are posting simple text/ASCII payload (`name=Mahmoud+Zalt&age=18`), you need to include
 `Content-Type : x-www-form-urlencoded` in the request header.
 
-#### JSON payload
+### JSON payload {#json-payload}
 
 To tell the web server that you are posting JSON-formatted payload (`{name : 'Mahmoud Zalt', age: 18}`), you need to
 include `Content-Type = application/json` in the request header.
@@ -27,8 +26,7 @@ include `Content-Type = application/json` in the request header.
 *(you may wish return Json data in this case as well, you can do so by changing the response serializer from
 `DataArraySerializer` to `JsonApiSerializer`, more about that in the response page).*
 
-<a name="send-http-req"></a>
-## HTTP Request Headers
+## HTTP Request Headers {#http-request-headers}
 
 | Header        | Value Sample                        | When to send it                                                              |
 |---------------|-------------------------------------|------------------------------------------------------------------------------|
@@ -45,18 +43,15 @@ include `Content-Type = application/json` in the request header.
 > `app/Ship/Configs/apiato.php` or allow them to skip it completely by setting the `'force-accept-header' => false,`.
 > By default this flag is set to false.
 
-<a name="call-EP"></a>
-## Calling Endpoints
+## Calling Endpoints {#calling-endpoints}
 
-<a name="call-unprotected-EP"></a>
-### Calling unprotected endpoint example:
+#### Calling unprotected endpoint example: {#calling-unprotected-endpoint}
 
 ```shell
 curl -X POST -H "Accept: application/json" -H "Content-Type: application/x-www-form-urlencoded; -F "email=admin@admin.com" -F "password=admin" -F "=" "http://api.domain.test/v2/register"
 ```
 
-<a name="call-protected-EP"></a>
-### Calling protected endpoint (passing Bearer Token) example:
+#### Calling protected endpoint (passing Bearer Token) example: {#calling-protected-endpoint}
 
 ```shell
 curl -X GET -H "Accept: application/json" -H "Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9..." -H "http://api.domain.test/v1/users"

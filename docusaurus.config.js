@@ -102,6 +102,9 @@ module.exports = {
       ],
       copyright: `Copyright © 2016 - ${new Date().getFullYear()} Apiato. Built with Love.`,
     },
+    prism: {
+      additionalLanguages: ['php'],
+    },
   },
   presets: [
     [
@@ -114,6 +117,7 @@ module.exports = {
             'https://github.com/moslem-deris/docs/edit/main',
           showLastUpdateAuthor: true,
           showLastUpdateTime: true,
+          
         },
         blog: {
           showReadingTime: true,
