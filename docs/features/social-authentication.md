@@ -4,28 +4,17 @@ title: Social Authentication
 
 - [Default Supported Auth Provide](#default-supported-auth-provide)
 - [How Social Authentication Works](#how-social-authentication-works)
-- [Setup Social Authentication](#Setup-Social-Authentication)
+- [Setup Social Authentication](#setup-social-authentication)
 - [Support new Auth Provide](#support-new-auth-provide)
-
-<br/>
-<br/>
 
 For Social Authentication Apiato uses [Socialite]( https://github.com/laravel/socialite).
 
-
-
-
-<a name="default-supported-auth-provide"></a>
-## Default Supported Auth Provide
+## Default Supported Auth Provide {#default-supported-auth-provide}
 
 * Facebook
 * Twitter
 
-
-
-
-<a name="how-social-authentication-works"></a>
-## How Social Authentication Works
+## How Social Authentication Works {#how-social-authentication-works}
 
 1. The Client (Mobile or Web) sends a request to the Social Auth Provider (Facebook, Twitter..).
 2. The Social Auth Provider returns a Code (Tokens).
@@ -33,10 +22,7 @@ For Social Authentication Apiato uses [Socialite]( https://github.com/laravel/so
 4. The Server fetches the user data from the Social Auth Provider using the received Code (Tokens).
 5. The Server create new User from the collected social data and return the Authenticated User (If the user already created then it just returns it).
 
-
-
-<a name="Setup-Social-Authentication"></a>
-## Setup Social Authentication
+## Setup Social Authentication {#setup-social-authentication}
 
 1) Create an App on the supported Social Auth provider.
 
@@ -154,9 +140,7 @@ Example Twitter Response:
 }
 ```
 
-
-<a name="support-new-auth-provide"></a>
-## Support new Auth Provider
+## Support new Auth Provider {#support-new-auth-provide}
 
 1) Pick an Auth Provider from the supported providers by [Socialite](https://socialiteproviders.github.io/).
 

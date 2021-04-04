@@ -3,20 +3,15 @@ title: Localization
 ---
 
 - [Select Request Language](#select-request-language)
-- [Support new language](#support-new-language)
-- [Translating Strings](#namespaces)
+- [Support new languages](#support-new-languages)
+- [Translating Strings](#translating-strings)
 - [Disable Localization](#disable-localization)
 - [Get Available Localizations](#get-available-localizations)
 - [Tests](#tests)
 
-<br/>
-<br/>
 The Localization is provided by the Localization Container.
-<br/>
 
-<a name="select-request-language"></a>
-
-## Select Request Language
+## Select Request Language {#select-request-language}
 
 You can select the language of the response by adding the header `Accept-Language` to the request. By default the 
 `Accept-Language` is set to the language defined in `config/app.php` `locale`. 
@@ -44,9 +39,7 @@ as regions are more specific)
 3) Check, if the value from 1) is within the list from 2). If the value is within this list, set it as application language, 
 if not throw an `Exception`.
 
-<a name="support-new-language"></a>
-
-## Support new language
+## Support new languages {#support-new-languages}
 
 1. All supported languages must be added to the `supported_languages` in `app/Containers/Localization/Configs/localization.php` 
 to prevent users from requesting unsupported languages, as follow:
@@ -72,9 +65,7 @@ page for more info.
 
 Example languages files are included in the Localization Container at `app/Containers/Localization/Resources/Languages`.
 
-<a name="namespaces"></a>
-
-## Translating Strings
+## Translating Strings {#translating-strings}
 
 By default all the Container translation files are namespaced to the Container name.
 
@@ -90,16 +81,12 @@ you remove the namespace (which is the lowercase of the container name) and try 
 will stick to the default one that is defined in `app.locale` config file. This is also true, if the requested locale 
 is present in the `supported_languages` array from the configuration file.
 
-<a name="disable-localization"></a>
-
-## Disable Localization
+## Disable Localization {#disable-localization}
 
 You will need to remove the Localization Middleware, by simply going to `app/Containers/Localization/Providers/MainServiceProvider.php` 
 and removing the `MiddlewareServiceProvider` from the `$serviceProviders` property.
 
-<a name="get-available-localizations"></a>
-
-## Get Available Localizations
+## Get Available Localizations {#get-available-localizations}
 
 Apiato provides a convenient way to get all defined localizations. These localizations can be retrieved via `GET /localizations` 
 by default. Note that this route only outputs the "top level" locales, like `en` from the example above. However, if 
@@ -112,8 +99,6 @@ applications default name (e.g., configured in `app.locale`). This would result 
 The same applies to the regions that are defined (e.g., `de-DE`). Consequently, this results in `locale_name => Deutschland` 
 and `default_name = Germany`.
 
-<a name="tests"></a>
-
-## Tests
+## Tests {#tests}
 
 To change the default language in your tests requests. You can set the `env` language in the `phpunit.xml` file.

@@ -117,7 +117,6 @@ module.exports = {
             'https://github.com/moslem-deris/docs/edit/main',
           showLastUpdateAuthor: true,
           showLastUpdateTime: true,
-          
         },
         blog: {
           showReadingTime: true,

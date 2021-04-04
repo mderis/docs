@@ -2,20 +2,15 @@
 title: Pagination
 ---
 
-- [Change the the default pagination limit](#change-the-the-default-pagination-limit)
+- [Change the default pagination limit](#change-the-default-pagination-limit)
 - [Limit](#limit)
 - [Skip the Pagination Limit](#skip-the-pagination-limit)
-
-<br/>
-<br/>
 
 For pagination apiato uses the [L5 Repository Package](https://packagist.org/packages/prettus/l5-repository) and the
 pagination gets applied whenever you use the `paginate` function on any model repository
 (example: `$stores = $this->storeRepository->paginate();`).
 
-<a name="change-the-the-default-pagination-limit"></a>
-
-## Change the the default pagination limit
+## Change the default pagination limit {#change-the-default-pagination-limit}
 
 Open the `.env` file and set a number for `PAGINATION_LIMIT_DEFAULT`:
 
@@ -25,9 +20,7 @@ PAGINATION_LIMIT_DEFAULT=10
 
 This is used in the `config/repository.php` which is the config file of the **L5 Repository** Package.
 
-<a name="limit"></a>
-
-## Limit
+## Limit {#limit}
 
 The `?limit=` parameter can be applied to define, how many results should be returned on one page (see also `Pagination`!).
 
@@ -49,10 +42,7 @@ you can manually override the `$allowDisablePagination` property in your specifi
 get all data (with no pagination applied) by requesting `api.domain.test/endpoint?limit=0`. This will return all matching
 entities.
 
-
-<a name="skip-the-pagination-limit"></a>
-
-## Skip the Pagination Limit
+## Skip the Pagination Limit {#skip-the-pagination-limit}
 
 You can allow developers to skip the pagination limit as follow:
 

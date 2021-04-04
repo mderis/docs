@@ -17,15 +17,11 @@ title: Query Parameters
 - [Caching skipping](#caching-skipping)
 - [Configuration](#configuration)
 - [See the Query parameters from the User Developer perspective](#see-the-query-parameters-from-the-user-developer-perspective)
-- [More Information](#more)
-
-<br/>
-<br/>
+- [More Information](#more-information)
 
 Users often need to control the response data, thus the apiato supports some useful and common query parameters:
 
-<a name="sorting-ordering"></a>
-## Sorting & Ordering
+## Sorting & Ordering {#sorting-ordering}
 
 The `?sortedBy=` parameter is usually used with the `orderBy` parameter.
 
@@ -47,9 +43,7 @@ Accepts:
 
 *(provided by the L5 Repository)*
 
-<a name="Searching"></a>
-
-## Searching
+## Searching {#searching}
 
 The `?search=` parameter can be applied to any **`GET`** HTTP request.
 
@@ -84,31 +78,25 @@ Notice should replace the space with `%20`.
 
 > Space should be replaced with `%20` (search=keyword%20here).
 
-<a name="search-any-field-for-multiple-keywords"></a>
-
-#### Search any field for multiple keywords
+#### Search any field for multiple keywords {#search-any-field-for-multiple-keywords}
 
 ```
 api.domain.test/endpoint?search=first keyword;second keyword
 ```
 
-<a name="search-in-specific-field"></a>
+#### Search in specific field {#search-in-specific-field}
 
-#### Search in specific field
 ```
 api.domain.test/endpoint?search=field:keyword here
 ```
 
-<a name="search-any-field-for-multiple-keywords"></a>
+#### Search in specific fields for multiple keywords {#search-in-specific-fields-for-multiple-keywords}
 
-#### Search in specific fields for multiple keywords
 ```
 api.domain.test/endpoint?search=field1:first field keyword;field2:second field keyword
 ```
 
-<a name="define-query-condition"></a>
-
-#### Define query condition
+#### Define query condition {#define-query-condition}
 
 ```
 api.domain.test/endpoint?search=field:keyword&searchFields=name:like
@@ -118,9 +106,7 @@ Checkout the Search Page for full implementation example.
 
 *(provided by the L5 Repository)*
 
-<a name="define-search-fields-for-search"></a>
-
-### Define search fields for search
+### Define search fields for search {#define-search-fields-for-search}
 
 ```
 ?search=name:John&email:john@main.com
@@ -129,11 +115,9 @@ Checkout the Search Page for full implementation example.
 
 *(provided by the L5 Repository)*
 
-See the [Search query parameter]({{ site.baseurl }}{% link _docs/features/search-query-parameter.md %}) page, for how to set it up and control the searchability.
+See the [Search query parameter](search-query-parameter}) page, for how to set it up and control the searchability.
 
-<a name="define-the-query-condition-for-search"></a>
-
-### Define the query condition for search
+### Define the query condition for search {#define-the-query-condition-for-search}
 
 ```
 ?searchFields=name:like
@@ -144,10 +128,7 @@ See the [Search query parameter]({{ site.baseurl }}{% link _docs/features/search
 
 *(provided by the L5 Repository)*
 
-
-<a name="filtering"></a>
-
-## Filtering
+## Filtering {#filtering}
 
 The `?filter=` parameter can be applied to any HTTP request. And is used to control the response size, by defining what
 data you want back in the response.
@@ -202,9 +183,7 @@ Note that the transformer, which is used to output / format the data is also fil
 to be filtered are present - all other fields are excluded. This also applies for all (!) relationships (i.e., includes)
 of the object.
 
-<a name="pagination"></a>
-
-## Pagination
+## Pagination {#pagination}
 
 The `?page=` parameter can be applied to any **`GET`** HTTP request responsible for listing records (mainly for Paginated data).
 
@@ -234,9 +213,7 @@ api.domain.test/endpoint?page=200
 
 *(provided by the Laravel Paginator)*
 
-<a name="limit"></a>
-
-## Limit
+## Limit {#limit}
 
 The `?limit=` parameter can be applied to define, how many results should be returned on one page (see also `Pagination`!).
 
@@ -258,9 +235,7 @@ you can manually override the `$allowDisablePagination` property in your specifi
 get all data (with no pagination applied) by requesting `api.domain.test/endpoint?limit=0`. This will return all matching
 entities.
 
-<a name="relationships-include"></a>
-
-## Relationships (include)
+## Relationships (include) {#relationships-include}
 
 Include relationships for complex data structures.
 
@@ -280,14 +255,14 @@ It is also possible to
 
 The `?include=` parameter can be used with any endpoint if it is supported.
 
-### How to use it
+### How to use it {#relationships-include-how-to-use-it}
 Let's say there is a `Driver` and a `Car` object. Also, there is an `/cars` endpoint that returns all `Car` objects.
 The `?include` parameter allows getting all cars with their respective drivers in one request by calling `/cars?include=driver`.
 
 However, for this parameter to work, the `CarTransformer`, which handles the `/cars` endpoint should clearly define that it
 accepts `driver` as relationship (in the **Available Relationships** section).
 
-### Nested Includes
+### Nested Includes {#relationships-include-nested-includes}
 It is also possible to request "nested includes". Extend the example from above. Imagine, that a `Driver` may also have a
 relationship to an `Address` object. You can access this information as well by calling `?include=driver,driver.address`.
 
@@ -321,9 +296,7 @@ Visit the [Transformers]({{ site.baseurl }}{% link _docs/components/transformers
 
 *(provided by the Fractal Transformer)*
 
-<a name="caching-skipping"></a>
-
-## Caching skipping
+## Caching skipping {#caching-skipping}
 
 Note: You need to turn the Eloquent Query Caching ON for this feature to work. Checkout the Configuration Page "ELOQUENT_QUERY_CACHE".
 
@@ -335,29 +308,22 @@ To run a new query and force disabling the cache on certain endpoints, you can u
 
 It's not recommended to keep skipping cache as it has bad impact on the performance.
 
-
 *(provided by the L5 Repository)*
 
-<a name="configuration"></a>
-
-## Configuration
+## Configuration {#configuration}
 
 Most of these parameters are provided by the L5 Repository and configurable from the `Ship/Configs/repository.php` file.
 Some of them are built in house, or inherited from other packages such as Fractal.
 
-<a name="see-the-query-parameters-from-the-user-developer-perspective"></a>
-
-## See the Query parameters from the User Developer perspective
+## See the Query parameters from the User Developer perspective {#see-the-query-parameters-from-the-user-developer-perspective}
 
 1) Generate the Default API documentation
 
 2) Visit the documentation URL
 
-More details in the [API Docs Generator]({{ site.baseurl }}{% link _docs/features/api-docs-generator.md %}) page.
+More details in the [API Docs Generator](api-docs-generator) page.
 
-<a name="more"></a>
-
-## More Information
+## More Information {#more-information}
 
 For more details on these parameters check out these links:
 

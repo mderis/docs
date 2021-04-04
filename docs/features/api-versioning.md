@@ -2,15 +2,12 @@
 title: API Versioning
 ---
 
-- [How it works](#How-it-works)
-- [Version the API in header instead of URL](#version-my-API)
-
+- [How it works](#how-it-works)
+- [Versioning API in header instead of URL](#version-the-api-in-header-instead-of-url)
 
 Since Laravel does not support API versioning, **apiato** provide a very easy way to implement versioning for your API.
 
-
-<a name="How-it-works"></a>
-### How it works
+### How it works {#how-it-works}
 
 **Create:**
 
@@ -32,10 +29,7 @@ Example:
 - `http://api.apiato.test/v1/orders`
 - `http://api.apiato.test/v2/stores/123`
 
-
-
-<a name="version-my-API"></a>
-## Version the API in header instead of URL
+## Version the API in header instead of URL{#version-the-api-in-header-instead-of-url}
 
 First remove the URL version prefix:
 

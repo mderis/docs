@@ -6,19 +6,14 @@ title: Authorization
 - [Responses](#responses)
 - [Assign Roles & Permission to the Testing User](#assign-roles-permission-to-the-testing-user)
 - [Seeding some users (Admins)](#seeding-some-users-admins)
-- [Roles & Permissions guards](#Roles-Permissions-guards)
-- [Permissions Inheriting with Levels](#Permissions-Inheriting-with-Levels)
+- [Roles & Permissions guards](#roles-permissions-guards)
+- [Permissions Inheriting with Levels](#permissions-inheriting-with-levels)
 
-
-<br/>
-<br/>
 apiato provides a Role-Based Access Control (RBAC) from it's Authorization Container.
 
 Behind the scenes apiato is using the [Laravel's authorization](https://laravel.com/docs/master/authorization) functionality that was introduced in version 5.1.11 with the helper package [laravel-permission](https://github.com/spatie/laravel-permission). So you can always refer to the correspond documentation for more information.
 
-<a name="how-it-works"></a>
-
-## How it works
+## How it works {#how-it-works}
 
 Authorization in apiato is very simple and easy.
 
@@ -69,11 +64,9 @@ class DeleteUserRequest extends Request
 ```
 
 
-**For detailed explanation of this example, please visit the [Requests]({{ site.baseurl }}{% link _docs/components/requests.md %}) Page.**
+**For detailed explanation of this example, please visit the [Requests](requests) Page.**
 
-<a name="responses"></a>
-
-## Responses
+## Responses {#responses}
 
 **Authorization failed JSON response:**
 
@@ -85,14 +78,11 @@ class DeleteUserRequest extends Request
 }
 ```
 
-<a name="assign-roles-permission-to-the-testing-user"></a>
-## Assign Roles & Permission to the Testing User
+## Assign Roles & Permission to the Testing User {#assign-roles-permission-to-the-testing-user}
 
-You will need to set `$access` property in your test class, check out the [Tests Helpers]({{ site.baseurl }}{% link _docs/miscellaneous/tests-helpers.md %}) page for more details.
+You will need to set `$access` property in your test class, check out the [Tests Helpers](tests-helpers) page for more details.
 
-
-<a name="seeding-some-users-admins"></a>
-## Seeding some users (Admins)
+## Seeding some users (Admins) {#seeding-some-users-admins}
 
 By default **apiato** comes with a `Super Admin` with Access to Admin Dashboard.
 
@@ -111,15 +101,11 @@ To give permissions to the `admin` role (or any other role), you can use the ded
 
 Checkout each container **Seeders** directory `app/Containers/{container-name}/Data/Seeders/`, to edit the default **Users**, **Roles** and **Permissions**.
 
-<a name="Roles-Permissions-guards"></a>
-## Roles & Permissions guards
+## Roles & Permissions guards {#roles-permissions-guards}
 
 By default Apiato uses a single guard called `web` for all it's roles and permissions, you can add/edit this behavior and support multiple guards at any time. Refer to the [laravel-permission](https://github.com/spatie/laravel-permission#using-multiple-guards) package for more details.
 
-
-
-<a name="Permissions-Inheriting-with-Levels"></a>
-## Permissions Inheriting with Levels
+## Permissions Inheriting with Levels {#permissions-inheriting-with-levels}
 
 When you create a role you can set an optional parameter, called `level`, which is set to `0` by default,
 The default seeded `admin` role has it set to `999`.

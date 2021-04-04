@@ -5,17 +5,13 @@ title: User Registration
 - [Register users by credentials (email and passwords)](#register-users-by-credentials-email-and-passwords)
 - [Register users by Social Account](#register-users-by-social-account)
 
-
-<a name="register-users-by-credentials-email-and-passwords"></a>
-
-### Register users by credentials (email and passwords)
+### Register users by credentials (email and passwords) {#register-users-by-credentials-email-and-passwords}
 
 Call the `http://api.apiato.test/v1/register` endpoint (you can find it's documentation after generating the API Docs.
 
 Check out the `registerUser` endpoint in the API Routes files.
 
 This will register a new User and respond with user object.
-
 
 **Registration request:**
 
@@ -70,9 +66,7 @@ For Third-Party Clients you must have client ID and secret first. You can genera
 
 For First-Party Clients you can use a proxy to add those fields on requests coming from your trusted client. For an example on how to do it look at `ProxyLoginForAdminWebClientAction` Action in Authentication Container.
 
-<a name="register-users-by-social-account"></a>
-
-### Register users by Social Account
+### Register users by Social Account {#register-users-by-social-account}
 
 > (Facebook, Twitter, Google..)
 

@@ -2,21 +2,17 @@
 title: Payments
 ---
 
-- [Supported Payment Gateway](#available-payment-gateways)
-- [How to charge users](#how-it-works)
-- [Manage Payment Accounts](#payment-accounts)
+- [Supported Payment Gateway](#supported-payment-gateways)
+- [How to charge users](#how-to-charge-users)
+- [Manage Payment Accounts](#manage-payment-accounts)
 - [Payment Transactions](#payment-transactions)
-- [Developing own Payment Gateway Containers](#payment-gateway-container)
-- [Mocking for Testing](#mocking-the-real-call-for-testing)
-
-<br/>
-<br/>
+- [Developing own Payment Gateway Containers](#developing-own-payment-gateway-containers)
+- [Mocking the real payment call for Testing](#mocking-the-real-payment-call-for-testing)
 
 Apiato provides a `Payment` container that acts as *gateway* for multiple payment providers (`Stripe`,
 `PayPal`...).
 
-<a name="available-payment-gateways"></a>
-## Supported Payment Gateways
+## Supported Payment Gateways {#supported-payment-gateways}
 
 Currently, Apiato Supports the following payment gateways:
 
@@ -25,8 +21,7 @@ Currently, Apiato Supports the following payment gateways:
 
 If your payment gateway is not supported, build it and contribute your container back.
 
-<a name="how-it-works"></a>
-## How to charge users?
+## How to charge users {#how-to-charge-users}
 
 1) Use the `App\Containers\Payment\Traits\ChargeableTrait` on the Model you want to charge and implement the
 `\App\Containers\Payment\Contracts\ChargeableInterface` Interface. The `User` by default is setup to be chargeable.
@@ -58,8 +53,7 @@ payment in order to do this. For more information about this, we refer to the
 [Polymorphic Relationships](https://laravel.com/docs/master/eloquent-relationships#polymorphic-relations) in the
 official Laravel Docs.
 
-<a name="payment-accounts"></a>
-## Manage Payment Accounts
+## Manage Payment Accounts {#manage-payment-accounts}
 
 Apiato already provides some generic routes in order to allow users to manage their own `PaymentAccount`:
 
@@ -73,8 +67,7 @@ credentials for `PayPal`).
 the payment gateway container (Stripe, WePay,...). Each payment container has its own endpoint to `create` and
 `update` account details, since each payment requires different data.
 
-<a name="payment-transactions"></a>
-## Payment Transactions
+## Payment Transactions {#payment-transactions}
 
 When charging the user with a specific gateway (e.g., Paypal, Stripe, ...), the respective `Task` (e.g., the
 `\App\Containers\Stripe\Tasks\ChargeWithStripeTask`) should return a `PaymentTransaction` model. This model, in turn,
@@ -92,8 +85,7 @@ to manually do this in your `CargeWithXTask`:
 Furthermore, the gateways may add the response from the gateway to the `data` field of the `PaymentTransaction`. The
 `custom` field, however, can be filled by the developer with own "custom" data.
 
-<a name="payment-gateway-container"></a>
-## Developing own Payment Gateway Containers
+## Developing own Payment Gateway Containers {#developing-own-payment-gateway-containers}
 
 The `Payment` container acts as generic foundation to "plug in" different containers that interacts with specific
 payment gateways (e.g., `PayPal`, `Stripe`, ...). This section introduces, how these containers shall be implemented
@@ -130,8 +122,7 @@ Basically, this entry points to the `charger_task` that handles, how to charge a
 
 That's all!
 
-<a name="mocking-the-real-call-for-testing"></a>
-## Mocking the real payment call for Testing
+## Mocking the real payment call for Testing {#mocking-the-real-payment-call-for-testing}
 
 ```php
 <?php
@@ -149,4 +140,4 @@ $this->mockIt(ChargeWithPaypalService::class)->shouldReceive('charge')->andRetur
 ]);
 ```
 
-Checkout the [Tests Helpers]({{ site.baseurl }}{% link _docs/miscellaneous/tests-helpers.md %}) page for about Testing.
+Checkout the [Tests Helpers](tests-helpers) page for about Testing.

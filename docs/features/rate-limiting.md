@@ -11,8 +11,6 @@ The rate limit window is `1` minute per endpoint, with most individual calls all
 
 *In other words, each user is allowed to make `30` calls per endpoint every `1` minute. (For each unique access token).*
 
-
-
 To update these values go to `app/Ship/Configs/apiato.php` config file, or to the `ENV` file.
 
 ```php
@@ -36,8 +34,7 @@ X-RateLimit-Limit →30
 X-RateLimit-Remaining →29
 ```
 
-
-## Enable/Disable Rate Limiting:
+## Enable/Disable Rate Limiting: {#enable-disable-rate-limiting}
 
 The API rate limiting middleware is enabled and applied to all the Container Endpoints by default.
 

@@ -10,13 +10,9 @@ title: Hash ID
     - [for URL ID's](#for-url-ids)
 - [Availability](#availability)
 
-<br/>
-<br/>
 Hashing your internal ID's, is very helpful feature for security reasons (to prevent some hack attacks) and business reasons (to hide the real total records from your competitors).
 
-<a name="enable-hash-id"></a>
-
-## Enable Hash ID
+## Enable Hash ID {#enable-hash-id}
 
 Set the `HASH_ID=true` in the `.env` file.
 
@@ -32,9 +28,7 @@ Example:
 
 Note: if the feature is set to false `HASH_ID=false` the `getHashedKey()` will return the normal ID.
 
-<a name="usage"></a>
-
-## Usage
+## Usage {#usage}
 
 There are 2 ways an ID's can be passed to your system via the API:
 
@@ -44,11 +38,10 @@ In parameters example: [GET] or [POST] `www.apiato.test/items?id=abcdef`.
 
 in both cases you will need to inform your API about what's coming form the Request class.
 
-Checkout the [Requests]({{ site.baseurl }}{% link _docs/components/requests.md %}) page. After setting the `$decode` and `$urlParameters` properties on your Request class, the ID will be automatically decoded for you, to apply validation rules on it or/and use it from your controller (`$request->id` will return the decoded ID).
+Checkout the [Requests](requests) page. After setting the `$decode` and `$urlParameters` properties on your Request class, the ID will be automatically decoded for you, to apply validation rules on it or/and use it from your controller (`$request->id` will return the decoded ID).
 
-<a name="configuration"></a>
 
-## Configuration
+## Configuration {#configuration}
 
 You can change the default length and characters used in the ID from the config file `app/Ship/Configs/hashids.php`or in the `.env` file by editing the `HASH_ID_LENGTH` value.
 
@@ -57,15 +50,11 @@ You can set the `HASH_ID_KEY` in the `.env` file to any random string. You can g
 
 The `HASH_ID_KEY` acts as the salt during hashing of the ID. This should never be changed in production as it renders all previously generated IDs quite difficult to decode and recover.
 
-<a name="testing"></a>
-
-## Testing
+## Testing {#testing}
 
 In your tests you must hash the ID's before making the calls, because if you tell your Request class to decode an ID for you, it will throw an exception when the ID is not encoded.
 
-<a name="for-parameter-ids"></a>
-
-### for Parameter ID's
+### for Parameter ID's {#for-parameter-ids}
 
 Always use `getHashedKey()` on your models when you want to get the ID
 
@@ -84,7 +73,7 @@ $response = $this->makeCall($data);
 
 *Or you can do this manually `Hashids::encode($id);`. *
 
-### for URL ID's
+### for URL ID's {#for-url-ids}
 
 You can use this helper function `injectId($id, $skipEncoding = false, $replace = '{id}')`.
 
@@ -94,9 +83,9 @@ Example:
 $response = $this->injectId($admin->id)->makeCall();
 ```
 
-More details on the [Tests Helpers]({{ site.baseurl }}{% link _docs/miscellaneous/tests-helpers.md %}) page.
+More details on the [Tests Helpers](tests-helpers) page.
 
-## Availability
+## Availability {#availability}
 
 You can use the `Apiato\Core\Traits\HashIdTrait` to any model or class, in order to have the `encode` and `decode` functions.
 

@@ -3,27 +3,22 @@ title: Code Generator
 ---
 
 - [Introduction](#introduction)
-- [Available Code Generator Commands](#available-code-generators)
+- [Available Code Generator Commands](#available-code-generator-commands)
 - [Demo](#demo)
-- [Custom Code Stubs](#custom-stubs)
+- [Custom Code Stubs](#custom-code-stubs)
 - [Contributing](#contributing)
 - [For AngularJS 2 Users](#for-angularjs-users)
 
-<a name="introduction"></a>
-
-## Introduction
+## Introduction {#introduction}
 
 Code Generators are a nice way to speed up development by creating boiler-plate code based on your inputs. You may
 already be familiar with the Laravel code generators (`php artisan make:controller`). 
 
 Apiato code generator works the same way. And in addition it can generate a full Container with fully working CRUD operations, including routes, requests, controller, Actions, Repositories, Models, Migrations, documentation.... and much more)
 
-
-<a name="available-code-generators"></a>
-## Available Code Generator Commands
+## Available Code Generator Commands {#available-code-generator-commands}
 
 To see the list of code generators type `php artisan`.
-
 
 ```
   apiato:generate:container        Create a Container for apiato from scratch
@@ -58,34 +53,17 @@ Note that **all** generators automatically inherit the options `--container` and
 as well in the help page). Furthermore, a generator may have specific options as well (e.g., the `--ui` (user-interface)
 to generate something for).
 
+## Demo {#demo}
 
+#### Generating a Route (endpoint) file: {#generating-a-route-endpoint-file}
 
+![](../../static/img/generate-route-demo.png)
 
+#### Result {#result}
 
+![](../../static/img/generated-route-demo.png)
 
-<a name="demo"></a>
-
-## Demo
-
-<a name="generating-a-route-endpoint-file"></a>
-
-##### Generating a Route (endpoint) file:
-
-![]({{ site.baseurl }}/images/documentation/generate-route-demo.png)
-
-<a name="result"></a>
-
-##### Result
-
-![]({{ site.baseurl }}/images/documentation/generated-route-demo.png)
-
-
-
-
-
-
-<a name="custom-stubs"></a>
-# Custom Code Stubs (aka. Customizing the Generator)
+## Custom Code Stubs (aka. Customizing the Generator) {#custom-code-stubs}
 
 If you don't like the automatically generated code (or would like to adapt it to your specific needs) you can do this quite easily.
 
@@ -98,16 +76,10 @@ start adapting it to your needs.
 If you run the respective command (e.g., in this case `php artisan apiato:generate:configuration`) 
 this would read your specific `config.stub` file instead the pre-defined one!
 
-
-
-<a name="contributing"></a>
-## Contributing
+## Contributing {#contributing}
 
 If you would like to add your own generators, please check out the [Contribution Guide]({{ site.baseurl }}{% link _docs/miscellaneous/contribution.md %}).
 
-
-
-<a name="for-angularjs-users"></a>
-## For AngularJS 2 Users
+## For AngularJS 2 Users {#for-angularjs-users}
 
 Checkout this awesome [CRUD Containers generator package](https://github.com/llstarscreamll/Crud) for Angular 2.4+.

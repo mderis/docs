@@ -4,41 +4,32 @@ title: API Docs Generator
 
 - [Requirements](#requirements)
 - [Usage](#usage)
-    - [1 - Write a PHP **docblock** on top of your endpoint like this:](#1---write-a-php-docblock-on-top-of-your-endpoint-like-this)
-    - [2 - Run the documentations generator command from the root directory:](#2---run-the-documentations-generator-command-from-the-root-directory)
-    - [3 - Visit this URL's as shown in your terminal:](#3---visit-this-urls-as-shown-in-your-terminal)
-  - [Generate Swagger/OpenAPI JSON schema from apiDoc](#generate-swaggeropenapi-json-schema-from-apidoc)
+    - [1- Write a PHP **docblock** on top of your endpoint like this:](#write-a-php-docblock-on-top-of-your-endpoint-like-this)
+    - [2- Run the documentation generator command from the root directory:](#run-the-documentation-generator-command-from-the-root-directory)
+    - [3- Visit this URL's as shown in your terminal:](#visit-this-urls-as-shown-in-your-terminal)
+  - [Generate Swagger/OpenAPI JSON schema from apiDoc](#generate-swagger-openapi-json-schema-from-apidoc)
   - [Error: ApiDoc not found !!](#error-apidoc-not-found)
   - [Shared response for faster updating and less outdated responses:](#shared-response-for-faster-updating-and-less-outdated-responses)
 - [Edit the default generated values in the templates:](#edit-the-default-generated-values-in-the-templates)
 - [Change the Documentations URL's](#change-the-documentations-urls)
 - [Edit the Documentation Header](#edit-the-documentation-header)
 
-<br />
-<br />
 Every great API needs a great Documentation.
 
 Apiato make writing and generating documentations very easy with the `php artisan apiato:apidoc` command.
 
 Alternatively you can generate a swagger doc from the apidoc comments, to do so run `php artisan apiato:swagger` command.
 
-
-<a name="requirements"></a>
-
-## Requirements
+## Requirements {#requirements}
 
 - Install the [ApiDocJs](http://apidocjs.com/) tool, the project directory
     - (`npm install apidoc`)
 
-- (Recommended) read the [Routes]({{ site.baseurl }}{% link _docs/components/routes.md %}) page first.
+- (Recommended) read the [Routes](routes) page first.
 
-<a name="usage"></a>
+## Usage {#usage}
 
-## Usage
-
-<a name="write-a-php-docblock-on-top-of-your-endpoint"></a>
-
-#### 1 - Write a PHP **docblock** on top of your endpoint like this:
+#### 1 - Write a PHP **docblock** on top of your endpoint like this: {#write-a-php-docblock-on-top-of-your-endpoint-like-this}
 
 *For more info about the parameters check out [ApiDocJs](http://apidocjs.com/#install) documentation*
 
@@ -93,9 +84,7 @@ $router->post('users/login', [
 
 **Note:** All the Endpoints `DocBlocks` MUST be written inside Routes files, otherwise they won't be loaded.
 
-<a name="run-documentations-generator-command-from-root-directory"></a>
-
-#### 2 - Run the documentations generator command from the root directory:
+#### 2 - Run the documentation generator command from the root directory: {#run-the-documentation-generator-command-from-the-root-directory}
 
 ```shell
 
@@ -103,23 +92,19 @@ php artisan apiato:apidoc
 
 ```
 
-<a name="visit-this-urls-as-shown-in-your-terminal"></a>
-
-#### 3 - Visit this URL's as shown in your terminal:
+#### 3 - Visit this URL's as shown in your terminal: {#visit-this-urls-as-shown-in-your-terminal}
 
 - Public (external) API at [http://apiato.test/api/documentation/](http://apiato.test/api/documentation/).
 
-![]({{ site.baseurl }}/images/documentation/public-api-doc.png)
+![](../../static/img/public-api-doc.png)
 
 - Private (internal) API at [http://apiato.test/api/private/documentation/](http://apiato.test/api/private/documentation/).
 
-![]({{ site.baseurl }}/images/documentation/private-api-doc.png)
+![](../../static/img/private-api-doc.png)
 
 **NOTE:** Every time you change the DocBlock of a Route file you need to run the `apiato:apidoc` command, to regenerate.
 
-<a name="generate-apidoc-openapi-not-found"></a>
-
-### Generate Swagger/OpenAPI JSON schema from apiDoc
+### Generate Swagger/OpenAPI JSON schema from apiDoc {#generate-swagger-openapi-json-schema-from-apidoc}
 
 It's also possible to generate a Swagger/OpenAPI JSON schema from apiDoc with:
 
@@ -131,9 +116,7 @@ php artisan apiato:swagger
 
 You can find the JSON schema at [http://apiato.test/api/private/documentation/swagger/swagger.json](http://apiato.test/api/private/documentation/swagger/swagger.json)
 
-<a name="error-apidoc-not-found"></a>
-
-### Error: ApiDoc not found !!
+### Error: ApiDoc not found !! {#error-apidoc-not-found}
 
 If you get an error (`apidoc not found`),
 
@@ -155,10 +138,7 @@ If you get an error (`apidoc not found`),
     'executable' => 'apidoc',
 ```
 
-
-<a name="shared-response-for-faster-updating-and-less-outdated-responses"></a>
-
-### Shared response for faster updating and less outdated responses:
+### Shared response for faster updating and less outdated responses: {#shared-response-for-faster-updating-and-less-outdated-responses}
 
 To prevent duplicating the responses between routes, let's create a shared response for each object.
 
@@ -195,12 +175,7 @@ To avoid having to generate and update the Single and Multiple responses of the 
 you can use the general shared Multiple Response `* @apiUse GeneralSuccessMultipleResponse`
 which you can find and modify it from `app/Containers/Documentation/UI/API/Routes/*`
 
-
-
-
-<a name="edit-the-default-generated-values-in-the-templates"></a>
-
-## Edit the default generated values in the templates:
+## Edit the default generated values in the templates: {#edit-the-default-generated-values-in-the-templates}
 
 Apiato generates by defaults 2 API documentations, each one has it's own `apidoc.json` file. Both can be modified from the Documentation Containers in `Containers/Documentation/ApiDocJs/`
 
@@ -231,10 +206,7 @@ Apiato generates by defaults 2 API documentations, each one has it's own `apidoc
 }
 ```
 
-
-<a name="change-the-documentations-urls"></a>
-
-## Change the Documentations URL's
+## Change the Documentations URL's {#change-the-documentations-urls}
 
 Edit the config file of the Documentation Container `Containers/Documentation/Configs/apidoc.php`
 
@@ -306,10 +278,7 @@ return [
 ];
 ```
 
-
-<a name="edit-the-documentation-header"></a>
-
-## Edit the Documentation Header
+## Edit the Documentation Header {#edit-the-documentation-header}
 
 The header usually is the Overview of your API. It contains Info about authenticating users, making requests, responses, potential errors, rate limiting, pagination, query parameters and anything you want.
 

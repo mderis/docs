@@ -2,7 +2,6 @@
 title: Validation
 ---
 
-
 apiato uses the powerful [Laravel validation](https://laravel.com/docs/validation) system.
 
 But in apiato validation must be defined in the Requests components, since every request might have different rules.
@@ -57,10 +56,7 @@ class RegisterUserRequest extends Request
     }
 ```
 
-
-<a name="responses"></a>
-
-## Responses
+## Responses {#responses}
 
 Validation Error response format:
 
@@ -95,5 +91,4 @@ Multiple Fields:
 }
 ```
 
-
-More details about requests in the "Request Page".
+More details about requests in the [Requests](requests) Page.
