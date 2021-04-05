@@ -112,6 +112,16 @@ module.exports = {
       // Optional fields.
       anonymizeIP: true, // Should IPs be anonymized?
     },
+    algolia: {
+      apiKey: '091d0d3c9ca7d164fa88d5ea8fff83a2',
+      indexName: 'APIATO',
+
+      // Optional: see doc section below
+      contextualSearch: true,
+
+      // Optional: Algolia search parameters
+      searchParameters: {},
+    },
   },
   presets: [
     [
