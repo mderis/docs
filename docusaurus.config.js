@@ -104,9 +104,11 @@ module.exports = {
     },
     prism: {
       additionalLanguages: ['php'],
+      theme: require('prism-react-renderer/themes/github'),
+      darkTheme: require('prism-react-renderer/themes/dracula'),
     },
     googleAnalytics: {
-      trackingID: 'G-CS8JYXPV5F',
+      trackingID: 'G-H1RNT1FEVT',
       // Optional fields.
       anonymizeIP: true, // Should IPs be anonymized?
     },
