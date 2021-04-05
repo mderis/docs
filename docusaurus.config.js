@@ -9,6 +9,7 @@ module.exports = {
   favicon: 'img/favicon.ico',
   organizationName: 'moslem-deris', // Usually your GitHub org/user name.
   projectName: 'docs', // Usually your repo name.
+  plugins: ['@docusaurus/plugin-google-analytics'],
   stylesheets: [
     "https://fonts.googleapis.com/icon?family=Material+Icons",
   ],
@@ -104,6 +105,11 @@ module.exports = {
     },
     prism: {
       additionalLanguages: ['php'],
+    },
+    googleAnalytics: {
+      trackingID: 'G-CS8JYXPV5F',
+      // Optional fields.
+      anonymizeIP: true, // Should IPs be anonymized?
     },
   },
   presets: [
