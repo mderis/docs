@@ -9,7 +9,6 @@ module.exports = {
   favicon: 'img/favicon.ico',
   organizationName: 'moslem-deris', // Usually your GitHub org/user name.
   projectName: 'docs', // Usually your repo name.
-  plugins: ['@docusaurus/plugin-google-analytics'],
   stylesheets: [
     "https://fonts.googleapis.com/icon?family=Material+Icons",
   ],
